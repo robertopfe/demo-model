@@ -10,7 +10,8 @@
 	</parent>
 	<groupId>com.inditex.example</groupId>
 	<artifactId>demo-model</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2</version>
+	<packaging>jar</packaging>
 	<name>demo-model</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -39,6 +40,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>repackage</id>
+						<configuration>
+							<classifier>exec</classifier>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
