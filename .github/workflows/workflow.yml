@@ -50,7 +50,7 @@ jobs:
             java-version: 1.11             
               
         - name: set version pom
-          run: mvn -B versions:set -DnewVersion=${{ needs.extract-preffix-name-pom-version.outputs.preffix_name }}-${{ needs.extract-suffix-name-branch.outputs.suffix_name }}-SNAPSHOT -DgenerateBackupPoms=false
+          run: mvn -B versions:set -DnewVersion=${{ needs.extract-preffix-name-pom-version.outputs.preffix_name }}-${{ needs.extract-suffix-name-branch.outputs.suffix_name }}-SNAPSHOT -DgenerateBackupPoms=true
          
         - name: Commit new version pom.xml - branch
           run: |
