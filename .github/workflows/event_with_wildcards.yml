@@ -1,1 +1,12 @@
+name: On push branch - develop or develop-*
+on:
+  push:
+    branches: [develop, develop-*]
+  
+jobs:
+  extract-suffix-name-branch:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2         
 
+        - run: echo "HOLA MUNDO"
