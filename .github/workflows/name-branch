@@ -1,0 +1,13 @@
+name: On push branch - develop or develop-*
+on:
+  push:
+    [main]
+  
+jobs:
+  hello-word:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2         
+        
+        - name: Branch name
+          run: echo running on branch ${GITHUB_REF##*/}
