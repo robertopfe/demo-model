@@ -8,5 +8,8 @@ jobs:
       steps:
         - uses: actions/checkout@v2         
         
-        - name: Branch name
+        - name: Branch name ${GITHUB_REF##*/}
           run: echo running on branch ${GITHUB_REF##*/}
+          
+        - name: Branch name  ${GITHUB_REF}
+          run: echo running on branch ${GITHUB_REF}
