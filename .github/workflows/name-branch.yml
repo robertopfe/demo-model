@@ -1,7 +1,7 @@
 name: On push branch - develop or develop-*
 on:
-  push:
-    [main]
+  push: 
+    branches: [main]
   
 jobs:
   hello-word:
