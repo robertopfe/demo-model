@@ -1,4 +1,4 @@
-name: On push branch - develop or develop-*
+name: On push branch - echo name
 on:
   push: 
     branches: [main]
