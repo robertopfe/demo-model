@@ -1,7 +1,6 @@
 name: On push branch - echo name
 on:
-  push: 
-    branches: [main]
+  push
   
 jobs:
   hello-word:
