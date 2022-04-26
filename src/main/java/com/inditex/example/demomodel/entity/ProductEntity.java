@@ -5,5 +5,5 @@ import lombok.Data;
 @Data
 public class ProductEntity {
 
-  private int code;
+  private int id;
 }
