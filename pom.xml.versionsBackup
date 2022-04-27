@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.inditex.example</groupId>
 	<artifactId>demo-model</artifactId>
-	<version>0.0.2-SGAESHPAP-15-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<packaging>jar</packaging>
 	<name>demo-model</name>
 	<description>Demo project for Spring Boot</description>
